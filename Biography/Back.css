@@ -1,0 +1,135 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000000; 
+    color: #E0E0E0; 
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #0F0F0F; 
+    box-shadow: 0 0 20px rgba(0, 255, 0, 0.8); 
+    border-radius: 10px;
+}
+
+header h1 {
+    text-align: center;
+    color: #00FF00; 
+}
+
+.profile {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.profile img {
+    width: 500px;
+    height: 500px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 15px rgba(0, 255, 0, 0.8); 
+}
+
+.profile h2 {
+    margin: 10px 0;
+    color: #B0FFB0; 
+}
+
+.details h3 {
+    margin-top: 20px;
+    color: #80FF80; 
+    border-bottom: 2px solid #00FF00;
+    padding-bottom: 5px;
+}
+
+.image-links {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+
+.image-wrapper {
+    position: relative;
+    width: 180px;
+    height: 180px;
+    margin-bottom: 20px;
+}
+
+.info-image {
+    width: 100%;
+    height: 100%; 
+    cursor: pointer;
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0, 255, 0, 0.6); 
+    transition: transform 0.2s; 
+    object-fit: cover; 
+}
+
+.info-image:hover {
+    transform: scale(1.05); 
+}
+
+.hover-text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    color: #00FF00; /* Green text color */
+    text-align: center;
+    padding: 5px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    border-radius: 0 0 8px 8px; /* Match the rounded corners of the image */
+}
+
+.image-wrapper:hover .hover-text {
+    opacity: 1; /* Show the text when hovering over the image */
+}
+
+.details a {
+    text-decoration: none;
+    color: #00FF00; 
+}
+
+.details p a {
+    color: #80FF80; 
+}
+
+.navigation {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.back-button {
+    display: inline-flex;
+    align-items: center;
+    background-color: #00FF00;
+    color: #000000;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    box-shadow: 0 4px 8px rgba(0, 255, 0, 0.6);
+    transition: background-color 0.3s ease-in-out;
+}
+
+.back-button:hover {
+    background-color: #80FF80;
+}
+
+.back-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.content img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto; /* Center the image */
+}
